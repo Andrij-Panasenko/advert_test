@@ -34,6 +34,7 @@ button {
 
 .section {
   position: relative;
+  z-index: 1;
   width: 100vw;
   height: 540px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bg-img-1x.png');
@@ -50,7 +51,7 @@ button {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .section {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/girls/woman-in-bikini-2x.png'), url('/images/bg-img-2x.png');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bg-img-2x.png');
   }
 }
 
@@ -72,12 +73,18 @@ button {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
 .slogan {
   color: #FFFFFF;
   font-size: 16px;
   line-height: 120%;
   text-align: center;
-  max-width: 258px;
+  width: 258px;
   margin: 0 auto;
   margin-bottom: 10px;
 
@@ -146,10 +153,12 @@ button {
   text-shadow: 0 10px 10px 0 rgba(255, 0, 0, 1);
 }
 
-.woman-in-gold {
+/* .woman-in-gold {
   display: none;
   background-image: url('/images/girls/woman-in-golden-dress-1x.png');
-}
+  background-position: bottom;
+  background-repeat: no-repeat;
+} */
 
 .woman-in-bikini {
   background-image: url('/images/girls/woman-in-bikini-1x.png');
@@ -164,19 +173,7 @@ button {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .woman-in-gold {
-    background-image: url('/images/girls/woman-in-golden-dress-2x.png');
-  }
-
-  .woman-in-bikini {
-    background-image: url('/images/girls/woman-in-bikini-2x.png');
-  }
-}
+} 
 
 .btns-wrapp {
   display: flex;
@@ -190,18 +187,20 @@ button {
 }
 
 .continue-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
   text-transform: uppercase;
-  text-align: center;
   color: #ffffff;
 
   border: none;
   outline: none;
 
   border-radius: 10px;
-  padding: 16px 100px;
   width: 330px;
   height: 56px;
 
@@ -210,11 +209,14 @@ button {
 }
 
 .decline-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
   text-transform: uppercase;
-  text-align: center;
   color: #ffffff;
 
   border: none;
@@ -223,7 +225,6 @@ button {
   border: 1px solid #fff;
   background-color: transparent;
   border-radius: 10px;
-  padding: 16px 100px;
   width: 330px;
   height: 56px;
 
@@ -246,6 +247,8 @@ button {
     line-height: 100%;
     padding: 16px 30px;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 1128px;
   }
 
   .sound-swich {
@@ -263,5 +266,66 @@ button {
   .heading-main {
     font-size: 84px;
     margin-bottom: 40px;
+  }
+
+  .section {
+    height: 969px;
+  }
+
+  .btns-wrapp {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+
+  .continue-btn {
+    font-size: 32px;
+    width: 323px;
+    height: 84px;
+  }
+
+  .decline-btn {
+    font-size: 32px;
+    width: 323px;
+    height: 84px;
+  }
+
+  .woman-in-bikini {
+    background-image: url('/images/girls/woman-in-bikini-2x.png');
+    width: 300px;
+    height: 100%;
+    transform: translate(90%);
+  }
+
+  .woman-in-gold {
+    background-image: url('/images/girls/woman-in-golden-dress-1x.png');
+
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-30%);
+    z-index: -1;
+    width: 425px;
+    height: 795px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .section {
+    padding-top: 191px;
+    padding-bottom: 191px;
+  }
+
+  .btns-wrapp {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .woman-in-bikini {
+    right: 0;
+  }
+
+  .woman-in-gold {
+    /* transform: translateX(10%); */
+    left: 10%;
   }
 }
