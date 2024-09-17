@@ -13,9 +13,10 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-img {
+img picture {
   display: block;
 }
 
@@ -224,7 +225,42 @@ button {
 
 /*********************  Section with slider  *********************/
 
+.heading-choose-section {
+  margin-bottom: 20px;
+}
 
+.next-btn {
+  margin: 0 auto;
+}
+
+.slider {}
+
+.slides {
+  width: 225px;
+  margin: 0 auto;
+}
+
+.slide {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 22px 27px 23px;
+  /* width: 225px; */
+  height: 278px;
+}
+
+.slide .text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+
+  margin-top: 10px;
+}
 
 /*********************  Media queries  *********************/
 
