@@ -331,7 +331,7 @@ button {
 }
 
 .girl-bikini-black {
-  background-image: url('/images/girls/girl-in-bikini-black-1x.png');
+  background-image: url('/images/girls/woman-in-bikini-black-1x.png');
   background-position: bottom;
   background-repeat: no-repeat;
 
@@ -501,11 +501,11 @@ button {
     font-size: 32px;
     line-height: 140%;
     margin-bottom: 120px;
-    width: 758px;
+    width: 785px;
   }
 
   .girl-bikini-black {
-    background-image: url('/images/girls/girl-in-bikini-black-desktop-1x-min.png');
+    background-image: url('/images/girls/woman-in-bikini-black-desktop-1x.png');
     width: 523px;
     height: 812px;
     transform: translateX(-120%);
@@ -556,5 +556,29 @@ button {
 
   .woman-in-gold {
     left: 10%;
+  }
+
+  /* Warning section */
+
+  .warning-section {
+    padding-top: 257px;
+    padding-bottom: 258px;
+  }
+
+  .girl-bikini-black {
+    left: 37%;
+  }
+
+  .girl-bikini-pink {
+    background-image: url('/images/girls/woman-in-bikini-pink-1x.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    width: 567px;
+    height: 812px;
+
+    position: absolute;
+    bottom: 0;
+    right: 4%;
   }
 }
