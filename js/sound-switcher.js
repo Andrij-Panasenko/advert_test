@@ -1,19 +1,25 @@
-const button = document.getElementById("soundSwitcher");
-console.log("🚀 ~ button:", button)
-const icons = document.getElementsByClassName("icon");
-
-button.addEventListener("click", toggleSound);
+const buttons = document.querySelectorAll("#soundSwitcher");
+buttons.forEach((button) => {
+  button.addEventListener("click", toggleSound);
+});
 
 function toggleSound() {
-  const isMuteIconExists = button.querySelector(".mute");
+  const isMuteIconExists = document.querySelectorAll(".mute").length > 0;
 
   if (!isMuteIconExists) {
-    const muteIcon = document.createElement("img");
-    muteIcon.src = "./images/mute.svg";
-    muteIcon.alt = "mute";
-    muteIcon.className = "mute";
-    button.appendChild(muteIcon);
+    buttons.forEach((button) => {
+      const muteIcon = document.createElement("img");
+      muteIcon.src = "./images/mute.svg";
+      muteIcon.alt = "Mute";
+      muteIcon.className = "mute";
+      button.appendChild(muteIcon);
+    });
   } else {
-    button.removeChild(isMuteIconExists);
+    buttons.forEach((button) => {
+      const muteIcon = button.querySelector(".mute");
+      if (muteIcon) {
+        button.removeChild(muteIcon);
+      }
+    });
   }
 }
