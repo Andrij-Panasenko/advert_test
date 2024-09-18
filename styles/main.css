@@ -52,7 +52,7 @@ section.active {
   z-index: 1;
   width: 100vw;
   height: 540px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bg-img-1x.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/bg-img-1x.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
