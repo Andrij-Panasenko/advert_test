@@ -284,16 +284,15 @@ button {
   width: 45px;
   height: 45px;
   border-radius: 100%;
+  top: calc(226px / 2);
   background: linear-gradient(159deg, #ffe53b 0%, #ff2525 92.71%);
 }
 
 .nav-btn#prev {
-  top: calc(226px / 2);
   left: -10px;
 }
 
 .nav-btn#next {
-  top: calc(226px / 2);
   right: -5px;
 }
 
@@ -385,12 +384,75 @@ button {
     width: 425px;
     height: 795px;
   }
+
+  .heading-choose-section {
+    font-size: 64px;
+    width: 925px;
+    margin-bottom: 45px;
+  }
+
+  .slider {
+    margin-bottom: 57px;
+    width: 463px;
+  }
+
+  .slide {
+    width: 463px;
+    height: 524px;
+    padding: 42px 71px 40px;
+  }
+
+  .slide .text {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  .nav-btn {
+    top: calc(524px / 2);
+    width: 88px;
+    height: 88px;
+  }
+
+  .nav-btn#prev {
+    left: 150px;
+  }
+
+  .nav-btn#next {
+    right: 150px;
+  }
+
+  .nav-btn .arrow-left {
+    width: 92px;
+    right: -35px;
+  }
+
+  .nav-btn .arrow-right {
+    width: 92px;
+    left: -35px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
   .section {
     padding-top: 191px;
     padding-bottom: 191px;
+  }
+
+  .chose-partner-section {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+
+  .heading-choose-section {
+    width: 1310px;
+  }
+
+  .nav-btn#prev {
+    left: 300px;
+  }
+
+  .nav-btn#next {
+    right: 300px;
   }
 
   .btns-wrapp {
