@@ -226,9 +226,9 @@ button {
 /*********************  Section with slider  *********************/
 
 .heading-choose-section {
-  margin-bottom: 20px;
   width: 308px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .next-btn {
