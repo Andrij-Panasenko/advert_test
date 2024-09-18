@@ -233,11 +233,19 @@ button {
   margin: 0 auto;
 }
 
-.slider {}
+.slider {
+  position: relative;
+  width: 226px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 
 .slides {
-  width: 225px;
-  margin: 0 auto;
+  display: flex;
+  /* gap: 10px; */
+  transition: transform 0.8s ease;
+  /* justify-content: center; */
 }
 
 .slide {
@@ -246,7 +254,7 @@ button {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.2);
   padding: 22px 27px 23px;
-  /* width: 225px; */
+  width: 226px;
   height: 278px;
 }
 
