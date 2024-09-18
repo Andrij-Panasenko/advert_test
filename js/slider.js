@@ -19,13 +19,11 @@ function updateSlider() {
 
 nextBtn.addEventListener("click", () => {
   currentIdx = (currentIdx + 1) % slideItem.length;
-  console.log(currentIdx);
   updateSlider();
 });
 
 prevBtn.addEventListener("click", () => {
   currentIdx = (currentIdx - 1 + slideItem.length) % slideItem.length;
-  console.log(currentIdx);
   updateSlider();
 });
 
