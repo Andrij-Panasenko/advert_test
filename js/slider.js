@@ -6,8 +6,14 @@ const prevBtn = document.getElementById("prev");
 let currentIdx = 0;
 
 function updateSlider() {
-  const offset = -currentIdx * 226 ;
-  console.log("🚀 ~ updateSlider ~ offset:", offset)
+  let offset;
+
+  if (slideItem[0].offsetWidth >= 463) {
+    offset = -currentIdx * 463;
+  } else {
+    offset = -currentIdx * 226;
+  }
+
   slideList[0].style.transform = `translateX(${offset}px)`;
 }
 
@@ -19,8 +25,8 @@ nextBtn.addEventListener("click", () => {
 
 prevBtn.addEventListener("click", () => {
   currentIdx = (currentIdx - 1 + slideItem.length) % slideItem.length;
-  console.log(currentIdx)
-  updateSlider()
+  console.log(currentIdx);
+  updateSlider();
 });
 
 updateSlider();
