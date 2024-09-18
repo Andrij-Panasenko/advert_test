@@ -37,44 +37,50 @@
         </button>
         <h1 class="heading heading-choose-section">Who Would You Choose as Your First Partner, if you play right now?
         </h1>
-        <div>
-          <button class="" id="prev">prev</button>
-          <button class="" id="next">next</button>
-        </div>
-        <div class="slider">
-          <ul class="slides">
-            <li class="slide">
-              <picture>
-                <source srcset="./images/slides/neighbor-desktop-1x.png 1x, ./images/slides/neighbor-desktop-2x.png 2x"
-                  media="(min-width: 1128px)">
-                <source srcset="./images/slides/neighbor-mobile-1x.png 1x, ./images/slides/neighbor-mobile-2x.png 2x"
-                  media="(min-width: 260px)">
-                <img src="./images/slides/neighbor-mobile-1x.png" alt="Neighbor photo choise">
-              </picture>
-              <p class="text">Neighbor</p>
-            </li>
-            <li class="slide">
-              <picture>
-                <source srcset="./images/slides/sister-desktop-1x.png 1x, ./images/slides/sister-desktop-2x.png 2x"
-                  media="(min-width: 1128px)">
-                <source srcset="./images/slides/sister-mobile-1x.png 1x, ./images/slides/sister-mobile-2x.png 2x"
-                  media="(min-width: 260px)">
-                <img src="./images/slides/sister-mobile-1x.png" alt="Sister photo choise">
-              </picture>
-              <p class="text">Step-sister</p>
-            </li>
-            <li class="slide">
-              <picture>
-                <source
-                  srcset="./images/slides/celebrity-desktop-1x.png 1x, ./images/slides/celebrity-desktop-2x.png 2x"
-                  media="(min-width: 1128px)">
-                <source srcset="./images/slides/celebrity-mobile-1x.png 1x, ./images/slides/celebrity-mobile-2x.png 2x"
-                  media="(min-width: 260px)">
-                <img src="./images/slides/celebrity-mobile-1x.png" alt="celebrity photo choise">
-              </picture>
-              <p class="text">Celebrity</p>
-            </li>
-          </ul>
+        <div class="slider-wrapper">
+          <button class="nav-btn" id="prev">
+            <img src="./images/arrow-left.svg" alt="Arrow" class="arrow-left">
+          </button>
+          <button class="nav-btn" id="next">
+            <img src="./images/arrow-right.svg" alt="Arrow" class="arrow-right">
+          </button>
+          <div class="slider">
+            <ul class="slides">
+              <li class="slide">
+                <picture>
+                  <source
+                    srcset="./images/slides/neighbor-desktop-1x.png 1x, ./images/slides/neighbor-desktop-2x.png 2x"
+                    media="(min-width: 1128px)">
+                  <source srcset="./images/slides/neighbor-mobile-1x.png 1x, ./images/slides/neighbor-mobile-2x.png 2x"
+                    media="(min-width: 260px)">
+                  <img src="./images/slides/neighbor-mobile-1x.png" alt="Neighbor photo choise">
+                </picture>
+                <p class="text">Neighbor</p>
+              </li>
+              <li class="slide">
+                <picture>
+                  <source srcset="./images/slides/sister-desktop-1x.png 1x, ./images/slides/sister-desktop-2x.png 2x"
+                    media="(min-width: 1128px)">
+                  <source srcset="./images/slides/sister-mobile-1x.png 1x, ./images/slides/sister-mobile-2x.png 2x"
+                    media="(min-width: 260px)">
+                  <img src="./images/slides/sister-mobile-1x.png" alt="Sister photo choise">
+                </picture>
+                <p class="text">Step-sister</p>
+              </li>
+              <li class="slide">
+                <picture>
+                  <source
+                    srcset="./images/slides/celebrity-desktop-1x.png 1x, ./images/slides/celebrity-desktop-2x.png 2x"
+                    media="(min-width: 1128px)">
+                  <source
+                    srcset="./images/slides/celebrity-mobile-1x.png 1x, ./images/slides/celebrity-mobile-2x.png 2x"
+                    media="(min-width: 260px)">
+                  <img src="./images/slides/celebrity-mobile-1x.png" alt="celebrity photo choise">
+                </picture>
+                <p class="text">Celebrity</p>
+              </li>
+            </ul>
+          </div>
         </div>
         <button type="button" class="continue-btn next-btn">Next</button>
       </div>
