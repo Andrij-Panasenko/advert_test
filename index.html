@@ -14,7 +14,7 @@
 
 <body>
   <main>
-    <section hidden class="section">
+    <section class="section active" id="welcome">
       <div class="container">
         <p class="slogan">Stop spending time on mediocre online stuff!</p>
         <button class="sound-swich">
@@ -25,12 +25,12 @@
         <div class="woman-in-gold"></div>
         <div class="woman-in-bikini"></div>
         <div class="btns-wrapp">
-          <button type="button" class="continue-btn">Continue</button>
-          <button type="button" class="decline-btn">No,thanks</button>
+          <button type="button" class="continue-btn" id="nextWelcome">Continue</button>
+          <button type="button" class="decline-btn" id="decline">No,thanks</button>
         </div>
       </div>
     </section>
-    <section hidden class="section chose-partner-section">
+    <section  class="section chose-partner-section" id="choose">
       <div class="container">
         <button class="sound-swich">
           <img class="icon" src="./images/sound.svg" alt="Sound">
@@ -82,10 +82,10 @@
             </ul>
           </div>
         </div>
-        <button type="button" class="continue-btn next-btn">Next</button>
+        <button type="button" class="continue-btn next-btn" id="nextChoose">Next</button>
       </div>
     </section>
-    <section class="section warning-section">
+    <section class="section warning-section" id="warning">
       <div class="container">
         <button class="sound-swich">
           <img class="icon" src="./images/sound.svg" alt="Sound">
@@ -95,11 +95,12 @@
           game.</p>
         <div class="girl-bikini-black"></div>
         <div class="girl-bikini-pink"></div>
-        <button type="button" class="continue-btn ok-continue-btn">Ok, Continue</button>
+        <button type="button" class="continue-btn ok-continue-btn" id="nextWarning">Ok, Continue</button>
       </div>
     </section>
   </main>
   <script type="module" src="./js/slider.js"></script>
+  <script type="module" src="./js/section-swicher.js"></script>
 </body>
 
 </html>

@@ -33,6 +33,14 @@ button {
 
 }
 
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
 .section {
   position: relative;
   z-index: 1;
