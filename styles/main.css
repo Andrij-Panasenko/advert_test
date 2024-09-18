@@ -227,6 +227,8 @@ button {
 
 .heading-choose-section {
   margin-bottom: 20px;
+  width: 308px;
+  margin: 0 auto;
 }
 
 .next-btn {
