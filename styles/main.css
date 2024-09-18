@@ -308,6 +308,48 @@ button {
   left: -6px;
 }
 
+/*********************  Section warning  *********************/
+
+.warning-section {
+  padding-bottom: 28px;
+}
+
+.heading-warning-section {
+  font-size: 48px;
+  line-height: 92%;
+}
+
+.warning-subtext {
+  font-size: 18px;
+  line-height: 133%;
+  text-align: center;
+  color: #FFFFFF;
+  width: 308px;
+  margin: 0 auto;
+  margin-bottom: 309px;
+}
+
+.girl-bikini-black {
+  background-image: url('/images/girls/girl-in-bikini-black-1x.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  width: 279px;
+  height: 430px;
+  margin: 0 auto;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ok-continue-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*********************  Media queries  *********************/
 
 /* Tablet */
