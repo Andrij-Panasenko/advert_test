@@ -66,7 +66,7 @@ section.active {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .section {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bg-img-2x.png');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg-img-2x.png');
   }
 }
 
@@ -168,7 +168,7 @@ section.active {
 }
 
 .woman-in-bikini {
-  background-image: url('/images/girls/woman-in-bikini-1x.png');
+  background-image: url('../images/girls/woman-in-bikini-1x.png');
   background-position: bottom;
   background-repeat: no-repeat;
   
@@ -345,7 +345,7 @@ section.active {
 }
 
 .girl-bikini-black {
-  background-image: url('/images/girls/woman-in-bikini-black-1x.png');
+  background-image: url('../images/girls/woman-in-bikini-black-1x.png');
   background-position: bottom;
   background-repeat: no-repeat;
 
@@ -432,7 +432,7 @@ section.active {
   }
 
   .woman-in-bikini {
-    background-image: url('/images/girls/woman-in-bikini-2x.png');
+    background-image: url('../images/girls/woman-in-bikini-2x.png');
     width: 300px;
     height: 100%;
     transform: translate(90%);
@@ -440,7 +440,7 @@ section.active {
   }
 
   .woman-in-gold {
-    background-image: url('/images/girls/woman-in-golden-dress-1x.png');
+    background-image: url('../images/girls/woman-in-golden-dress-1x.png');
 
     position: absolute;
     bottom: 0;
@@ -519,7 +519,7 @@ section.active {
   }
 
   .girl-bikini-black {
-    background-image: url('/images/girls/woman-in-bikini-black-desktop-1x.png');
+    background-image: url('../images/girls/woman-in-bikini-black-desktop-1x.png');
     width: 523px;
     height: 812px;
     transform: translateX(-120%);
@@ -584,7 +584,7 @@ section.active {
   }
 
   .girl-bikini-pink {
-    background-image: url('/images/girls/woman-in-bikini-pink-1x.png');
+    background-image: url('../images/girls/woman-in-bikini-pink-1x.png');
     background-position: bottom;
     background-repeat: no-repeat;
 
